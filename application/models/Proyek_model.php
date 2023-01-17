@@ -257,6 +257,137 @@ class Proyek_model extends CI_Model
         ");
         return $query;
     }
+    public function getpekerjaantotal3($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotal4($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotal5($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotal6($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotal7($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotal8($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotal9($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotal10($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotal11($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotal12($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotal13($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotal14($id_rab)
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        where p.id_rab = '$id_rab'
+        ");
+        return $query;
+    }
+    public function getpekerjaantotalall()
+    {
+        $query = $this->db->query("
+       select sum(p.volume * p.harga_satuan) as total
+        from pekerjaan p 
+        left join jenis_pekerjaan jp on p.id_rab=jp.id_rab
+        
+        ");
+        return $query;
+    }
+
 
     public function groupbyidrab()
     {

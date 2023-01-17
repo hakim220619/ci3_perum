@@ -15,6 +15,7 @@ class Keuangan extends CI_Controller
         $data['title'] = 'Daftar Pengeluaran RAB';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         // $data['getidrab'] = $this->Proyek_model->groupbyidrab()->result_array();
+
         $data['rab1'] = $this->Proyek_model->getpekerjaan1('001')->result_array();
         $data['rab2'] = $this->Proyek_model->getpekerjaan2('002')->result_array();
         $data['rab3'] = $this->Proyek_model->getpekerjaan3('003')->result_array();
@@ -33,6 +34,22 @@ class Keuangan extends CI_Controller
 
         $data['totalrab1'] = $this->Proyek_model->getpekerjaantotal1('001')->row_array();
         $data['totalrab2'] = $this->Proyek_model->getpekerjaantotal2('002')->row_array();
+        $data['totalrab3'] = $this->Proyek_model->getpekerjaantotal3('003')->row_array();
+        $data['totalrab4'] = $this->Proyek_model->getpekerjaantotal4('004')->row_array();
+        $data['totalrab5'] = $this->Proyek_model->getpekerjaantotal5('005')->row_array();
+        $data['totalrab6'] = $this->Proyek_model->getpekerjaantotal6('006')->row_array();
+        $data['totalrab7'] = $this->Proyek_model->getpekerjaantotal7('007')->row_array();
+        $data['totalrab8'] = $this->Proyek_model->getpekerjaantotal8('008')->row_array();
+        $data['totalrab9'] = $this->Proyek_model->getpekerjaantotal9('009')->row_array();
+        $data['totalrab10'] = $this->Proyek_model->getpekerjaantotal10('0010')->row_array();
+        $data['totalrab11'] = $this->Proyek_model->getpekerjaantotal11('0011')->row_array();
+        $data['totalrab12'] = $this->Proyek_model->getpekerjaantotal12('0012')->row_array();
+        $data['totalrab13'] = $this->Proyek_model->getpekerjaantotal13('0013')->row_array();
+        $data['totalrab14'] = $this->Proyek_model->getpekerjaantotal14('0014')->row_array();
+
+
+        $data['totalraball'] = $this->Proyek_model->getpekerjaantotalall()->row_array();
+
 
 
         // dead($data['totalrab1']);
