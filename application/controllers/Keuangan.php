@@ -8,6 +8,7 @@ class Keuangan extends CI_Controller
         parent::__construct();
         // is_logged_in();
         $this->load->model("Proyek_model");
+        $this->load->model("detailpekerjaan_model");
     }
 
     public function index()
@@ -15,21 +16,22 @@ class Keuangan extends CI_Controller
         $data['title'] = 'Daftar Pengeluaran RAB';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
         // $data['getidrab'] = $this->Proyek_model->groupbyidrab()->result_array();
+        $data['detailpekerjaan'] = $this->detailpekerjaan_model->pekerjaanjoin('001');
 
-        $data['rab1'] = $this->Proyek_model->getpekerjaan1('001')->result_array();
-        $data['rab2'] = $this->Proyek_model->getpekerjaan2('002')->result_array();
-        $data['rab3'] = $this->Proyek_model->getpekerjaan3('003')->result_array();
-        $data['rab4'] = $this->Proyek_model->getpekerjaan4('004')->result_array();
-        $data['rab5'] = $this->Proyek_model->getpekerjaan5('005')->result_array();
-        $data['rab6'] = $this->Proyek_model->getpekerjaan6('006')->result_array();
-        $data['rab7'] = $this->Proyek_model->getpekerjaan7('007')->result_array();
-        $data['rab8'] = $this->Proyek_model->getpekerjaan8('008')->result_array();
-        $data['rab9'] = $this->Proyek_model->getpekerjaan9('009')->result_array();
-        $data['rab10'] = $this->Proyek_model->getpekerjaan10('010')->result_array();
-        $data['rab11'] = $this->Proyek_model->getpekerjaan11('011')->result_array();
-        $data['rab12'] = $this->Proyek_model->getpekerjaan12('012')->result_array();
-        $data['rab13'] = $this->Proyek_model->getpekerjaan13('013')->result_array();
-        $data['rab14'] = $this->Proyek_model->getpekerjaan14('014')->result_array();
+        $data['rab1'] = $this->detailpekerjaan_model->pekerjaanjoin('001');
+        $data['rab2'] = $this->detailpekerjaan_model->pekerjaanjoin('002');
+        $data['rab3'] = $this->detailpekerjaan_model->pekerjaanjoin('003');
+        $data['rab4'] = $this->detailpekerjaan_model->pekerjaanjoin('004');
+        $data['rab5'] = $this->detailpekerjaan_model->pekerjaanjoin('005');
+        $data['rab6'] = $this->detailpekerjaan_model->pekerjaanjoin('006');
+        $data['rab7'] = $this->detailpekerjaan_model->pekerjaanjoin('007');
+        $data['rab8'] = $this->detailpekerjaan_model->pekerjaanjoin('008');
+        $data['rab9'] = $this->detailpekerjaan_model->pekerjaanjoin('009');
+        $data['rab10'] = $this->detailpekerjaan_model->pekerjaanjoin('010');
+        $data['rab11'] = $this->detailpekerjaan_model->pekerjaanjoin('011');
+        $data['rab12'] = $this->detailpekerjaan_model->pekerjaanjoin('012');
+        $data['rab13'] = $this->detailpekerjaan_model->pekerjaanjoin('013');
+        $data['rab14'] = $this->detailpekerjaan_model->pekerjaanjoin('014');
 
 
         $data['totalrab1'] = $this->Proyek_model->getpekerjaantotal1('001')->row_array();

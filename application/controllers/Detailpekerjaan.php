@@ -22,7 +22,7 @@ class Detailpekerjaan extends CI_Controller
 
         $data['detailpekerjaan'] = $this->detailpekerjaan_model->pekerjaanjoin($id_pekerjaan);
         // $data['gettotal'] = $this->detailpekerjaan_model->gettotal($id_pekerjaan)->result();
-        // var_dump($data['gettotal']);
+        // var_dump($data['detailpekerjaan']);
         // die();
         $this->form_validation->set_rules('detailpekerjaan', 'Detailpekerjaan', 'required');
 
