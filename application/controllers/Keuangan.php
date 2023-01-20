@@ -65,7 +65,7 @@ class Keuangan extends CI_Controller
     }
     public function list()
     {
-        $data['title'] = 'Daftar Proyek';
+        $data['title'] = 'Daftar Pengeluaran RAB';
         $data["proyek"] = $this->Proyek_model->getAll();
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
