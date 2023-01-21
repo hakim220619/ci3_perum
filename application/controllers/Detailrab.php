@@ -11,15 +11,15 @@ class Detailrab extends CI_Controller
         $this->load->library('form_validation');
     }
 
-    public function index()
+    public function index($kd_proyek)
     {
         $data['title'] = 'Detail Daftar Proyek';
         $data["detailrab"] = $this->detailrab_model->getAll();
 
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['detailrab'] = $this->db->get('jenis_pekerjaan')->result_array();
-
+        $data['detailrab'] = $this->detailrab_model->getjenisrab($kd_proyek)->result_array();
+        // dead($data["detailrab"]);
         $this->form_validation->set_rules('detailrab', 'Detailrab', 'required');
 
         if ($this->form_validation->run() == false) {

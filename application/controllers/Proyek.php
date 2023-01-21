@@ -68,9 +68,9 @@ class Proyek extends CI_Controller
         $data['title'] = 'Edit Data Proyek';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $where = array('kd_proyek' => $kd_proyek);
+        $where = array('kd_proyek' => $kd_proyek,);
         $data['proyek'] = $this->proyek_model->edit_data($where, 'proyek')->result_array();
-
+        // dead($data['proyek']);
         $proyek = $this->proyek_model;
         $validation = $this->form_validation;
         $validation->set_rules($proyek->rules());

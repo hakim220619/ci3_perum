@@ -73,4 +73,11 @@ class Detailrab_model extends CI_Model
     {
         return $this->db->delete($this->_table, array("id_rab" => $id));
     }
+    public function getjenisrab($kd_proyek)
+    {
+        $query = $this->db->query("
+        SELECT * FROM pekerjaan p left join jenis_pekerjaan jp on p.id_rab=jp.id_rab WHERE kd_proyek = '$kd_proyek' GROUP by jp.id_rab 
+        ");
+        return $query;
+    }
 }

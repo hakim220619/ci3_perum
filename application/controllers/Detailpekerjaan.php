@@ -11,7 +11,7 @@ class Detailpekerjaan extends CI_Controller
         $this->load->library('form_validation');
     }
 
-    public function index($id_pekerjaan = null)
+    public function index($kd_proyek, $id_pekerjaan = null)
     {
         $data['title'] = 'Detail Daftar Pekerjaan';
         $data["detailpekerjaan"] = $this->detailpekerjaan_model->getAll();
@@ -19,10 +19,14 @@ class Detailpekerjaan extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
         $data['detailpekerjaan'] = $this->db->get('pekerjaan')->result_array();
-        $proyek = $this->db->get('pekerjaan')->row_array();
+        // $proyek = $this->db->get('pekerjaan')->row_array();
 
 
-        $data['detailpekerjaan'] = $this->detailpekerjaan_model->pekerjaanjoin($proyek['kd_proyek'], $id_pekerjaan);
+        $data['detailpekerjaan'] = $this->detailpekerjaan_model->pekerjaanjoin($kd_proyek, $id_pekerjaan);
+        $getdata = $this->detailpekerjaan_model->pekerjaanjoin($kd_proyek, $id_pekerjaan);
+        $data['kd_proyek'] = $getdata[0]->kd_proyek;
+        // dead();
+        // dead($data['detailpekerjaan']);
         // $data['gettotal'] = $this->detailpekerjaan_model->gettotal($id_pekerjaan)->result();
         // var_dump($data['detailpekerjaan']);
         // die();
@@ -77,21 +81,23 @@ class Detailpekerjaan extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-    public function edit($id_pekerjaan = null)
+    public function edit($kd_proyek = null, $id_pekerjaan = null)
     {
         if (!isset($id_pekerjaan)) redirect('detailpekerjaan');
 
         $data['title'] = 'Edit Daftar Rincian Detailpekerjaan';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-
-        $where = array('id_pekerjaan' => $id_pekerjaan);
+        // dead($kd_proyek);
+        $where = array('kd_proyek' => $kd_proyek, 'id_pekerjaan' => $id_pekerjaan);
         $data['detailpekerjaan'] = $this->detailpekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
         $getidrab = $this->detailpekerjaan_model->edit_data($where, 'pekerjaan')->result_array();
         $data['getidrab'] = $getidrab[0]['id_rab'];
+        $data['getkdproyek'] = $getidrab[0]['kd_proyek'];
 
         $detailpekerjaan = $this->detailpekerjaan_model;
         $validation = $this->form_validation;
         $validation->set_rules($detailpekerjaan->rules());
+        // dead($detailpekerjaan);
         // var_dump($data['total']);
         // die;
         if ($validation->run() == false) {

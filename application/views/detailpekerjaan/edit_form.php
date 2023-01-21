@@ -21,16 +21,17 @@
             <div class="card mb-3">
                 <div class="card-header">
 
-                    <a href="<?php echo site_url('detailpekerjaan/index/' . $getidrab . '') ?>"><i class="fas fa-arrow-left"></i>
+                    <a href="<?php echo site_url('detailpekerjaan/index/' . $getkdproyek . '/' . $getidrab . '') ?>"><i class="fas fa-arrow-left"></i>
                         Kembali</a>
                 </div>
                 <div class="card-body">
 
                     <?php foreach ($detailpekerjaan as $dpk) : ?>
-                        <form action="<?php base_url("proyek/edit") ?>" method="post" enctype="multipart/form-data">
+                        <form action="<?php base_url("detailpekerjaan/edit") ?>" method="post" enctype="multipart/form-data">
 
                             <input type="hidden" name="id_pekerjaan" value="<?php echo $dpk['id_pekerjaan'] ?>" />
                             <input type="hidden" name="id_rab" value="<?php echo $dpk['id_rab'] ?>" />
+                            <input type="hidden" name="kd_proyek" value="<?php echo $dpk['kd_proyek'] ?>" />
                             <input type="hidden" name="nama_pekerjaan" value="<?php echo $dpk['nama_pekerjaan'] ?>" />
                             <input type="hidden" name="satuan" value="<?php echo $dpk['satuan'] ?>" />
 

@@ -14,7 +14,7 @@
             <!-- DataTables -->
             <div class="card mb-3">
                 <div class="card-header">
-                    <a href="<?php echo site_url('detailrab') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
+                    <a href="<?php echo site_url('detailrab/index/' . $kd_proyek . '') ?>"><i class="fas fa-arrow-left"></i> Kembali</a>
                 </div>
                 <div class="card-body">
 
@@ -34,32 +34,31 @@
                             <tbody>
                                 <?php foreach ($detailpekerjaan as $dp) : ?>
 
-                                <tr>
-                                    <td>
-                                        <?php echo $dp->id_pekerjaan ?>
-                                    </td>
-                                    <td width="">
-                                        <?php echo $dp->nama_pekerjaan ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $dp->volume ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $dp->satuan ?>
-                                    </td>
-                                    <td>
-                                        Rp<?= number_format($dp->harga_satuan); ?>
-                                    </td>
+                                    <tr>
+                                        <td>
+                                            <?php echo $dp->id_pekerjaan ?>
+                                        </td>
+                                        <td width="">
+                                            <?php echo $dp->nama_pekerjaan ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $dp->volume ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $dp->satuan ?>
+                                        </td>
+                                        <td>
+                                            Rp<?= number_format($dp->harga_satuan); ?>
+                                        </td>
 
-                                    <td>
-                                        Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                    </td>
+                                        <td>
+                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                        </td>
 
-                                    <td>
-                                        <a href="<?php echo site_url('detailpekerjaan/edit/' . $dp->id_pekerjaan) ?>"
-                                            class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
-                                    </td>
-                                </tr>
+                                        <td>
+                                            <a href="<?php echo site_url('detailpekerjaan/edit/' . $dp->kd_proyek . '/' . $dp->id_pekerjaan) ?>" class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
+                                        </td>
+                                    </tr>
                                 <?php endforeach; ?>
                             </tbody>
                         </table>
@@ -78,8 +77,7 @@
 <!-- End of Main Content -->
 
 <!-- Modal -->
-<div class="modal fade" id="addModalDetailrab" tabindex="-1" aria-labelledby="addModalDetailrabLabel"
-    aria-hidden="true">
+<div class="modal fade" id="addModalDetailrab" tabindex="-1" aria-labelledby="addModalDetailrabLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -94,8 +92,7 @@
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="">Bowplank</label>
-                                <input type="text" name=""
-                                    class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+                                <input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
                                 <div class="invalid-feedback">
                                     <?php echo form_error('') ?>
                                 </div>
@@ -104,8 +101,7 @@
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="">Galian tanah</label>
-                                <input type="text" name=""
-                                    class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+                                <input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
                                 <div class="invalid-feedback">
                                     <?php echo form_error('') ?>
                                 </div>
@@ -114,8 +110,7 @@
                         <div class="col-sm-5">
                             <div class="form-group">
                                 <label for="">Pasangan batu kumbung 1:3:10</label>
-                                <input type="text" name=""
-                                    class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+                                <input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
                                 <div class="invalid-feedback">
                                     <?php echo form_error('') ?>
                                 </div>
@@ -124,8 +119,7 @@
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="">Urukan pasir pondasi</label>
-                                <input type="text" name=""
-                                    class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+                                <input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
                                 <div class="invalid-feedback">
                                     <?php echo form_error('') ?>
                                 </div>
@@ -134,8 +128,7 @@
                         <div class="col-sm-5">
                             <div class="form-group">
                                 <label for="">Uruk kembali lubang pondasi</label>
-                                <input type="text" name=""
-                                    class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+                                <input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
                                 <div class="invalid-feedback">
                                     <?php echo form_error('') ?>
                                 </div>

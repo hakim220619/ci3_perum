@@ -29,19 +29,18 @@
                             </thead>
                             <tbody>
                                 <?php foreach ($detailrab as $detailrab) : ?>
-                                <tr>
-                                    <td>
-                                        <?php echo $detailrab['id_rab'] ?>
-                                    </td>
-                                    <td width="">
-                                        <?php echo $detailrab['nama_rab'] ?>
-                                    </td>
-                                    <td>
-                                        <a href="<?= site_url('detailpekerjaan/index/' . $detailrab['id_rab']) ?>"
-                                            class="btn btn-small text-info"><i class="fas fa-info-circle"></i>
-                                            Detail</a>
-                                    </td>
-                                </tr>
+                                    <tr>
+                                        <td>
+                                            <?php echo $detailrab['id_rab'] ?>
+                                        </td>
+                                        <td width="">
+                                            <?php echo $detailrab['nama_rab'] ?>
+                                        </td>
+                                        <td>
+                                            <a href="<?= site_url('detailpekerjaan/index/' . $detailrab['kd_proyek'] . '/' . $detailrab['id_rab']) ?>" class="btn btn-small text-info"><i class="fas fa-info-circle"></i>
+                                                Detail</a>
+                                        </td>
+                                    </tr>
                                 <?php endforeach; ?>
                             </tbody>
                         </table>
@@ -60,8 +59,7 @@
 <!-- End of Main Content -->
 
 <!-- Modal -->
-<div class="modal fade" id="addModalDetailrab" tabindex="-1" aria-labelledby="addModalDetailrabLabel"
-    aria-hidden="true">
+<div class="modal fade" id="addModalDetailrab" tabindex="-1" aria-labelledby="addModalDetailrabLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -76,8 +74,7 @@
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="">Bowplank</label>
-                                <input type="text" name=""
-                                    class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+                                <input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
                                 <div class="invalid-feedback">
                                     <?php echo form_error('') ?>
                                 </div>
@@ -86,8 +83,7 @@
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="">Galian tanah</label>
-                                <input type="text" name=""
-                                    class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+                                <input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
                                 <div class="invalid-feedback">
                                     <?php echo form_error('') ?>
                                 </div>
@@ -96,8 +92,7 @@
                         <div class="col-sm-5">
                             <div class="form-group">
                                 <label for="">Pasangan batu kumbung 1:3:10</label>
-                                <input type="text" name=""
-                                    class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+                                <input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
                                 <div class="invalid-feedback">
                                     <?php echo form_error('') ?>
                                 </div>
@@ -106,8 +101,7 @@
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label for="">Urukan pasir pondasi</label>
-                                <input type="text" name=""
-                                    class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+                                <input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
                                 <div class="invalid-feedback">
                                     <?php echo form_error('') ?>
                                 </div>
@@ -116,8 +110,7 @@
                         <div class="col-sm-5">
                             <div class="form-group">
                                 <label for="">Uruk kembali lubang pondasi</label>
-                                <input type="text" name=""
-                                    class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
+                                <input type="text" name="" class="form-control <?php echo form_error('') ? 'is-invalid' : '' ?>">
                                 <div class="invalid-feedback">
                                     <?php echo form_error('') ?>
                                 </div>

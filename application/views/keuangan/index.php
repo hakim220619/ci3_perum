@@ -34,29 +34,29 @@
                             <tbody>
                                 <?php foreach ($rab1 as $dp) : ?>
 
-                                <tr>
-                                    <td>
-                                        <?php echo $dp->id_pekerjaan ?>
-                                    </td>
-                                    <td width="">
-                                        <?php echo $dp->nama_pekerjaan ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $dp->volume ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $dp->satuan ?>
-                                    </td>
-                                    <td>
-                                        Rp<?= number_format($dp->harga_satuan); ?>
-                                    </td>
+                                    <tr>
+                                        <td>
+                                            <?php echo $dp->id_pekerjaan ?>
+                                        </td>
+                                        <td width="">
+                                            <?php echo $dp->nama_pekerjaan ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $dp->volume ?>
+                                        </td>
+                                        <td>
+                                            <?php echo $dp->satuan ?>
+                                        </td>
+                                        <td>
+                                            Rp<?= number_format($dp->harga_satuan); ?>
+                                        </td>
 
-                                    <td>
-                                        Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                    </td>
+                                        <td>
+                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                        </td>
 
 
-                                </tr>
+                                    </tr>
                                 <?php endforeach; ?>
                             </tbody>
                             <tfoot>
@@ -88,29 +88,29 @@
                                 <tbody>
                                     <?php foreach ($rab2 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -141,29 +141,29 @@
                                 <tbody>
                                     <?php foreach ($rab3 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -194,29 +194,29 @@
                                 <tbody>
                                     <?php foreach ($rab4 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -247,29 +247,29 @@
                                 <tbody>
                                     <?php foreach ($rab5 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -300,29 +300,29 @@
                                 <tbody>
                                     <?php foreach ($rab6 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -353,29 +353,29 @@
                                 <tbody>
                                     <?php foreach ($rab7 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -406,29 +406,29 @@
                                 <tbody>
                                     <?php foreach ($rab8 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -459,29 +459,29 @@
                                 <tbody>
                                     <?php foreach ($rab9 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -512,29 +512,29 @@
                                 <tbody>
                                     <?php foreach ($rab10 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -565,29 +565,29 @@
                                 <tbody>
                                     <?php foreach ($rab11 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -618,29 +618,29 @@
                                 <tbody>
                                     <?php foreach ($rab12 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -671,29 +671,29 @@
                                 <tbody>
                                     <?php foreach ($rab13 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
@@ -724,29 +724,29 @@
                                 <tbody>
                                     <?php foreach ($rab14 as $dp) : ?>
 
-                                    <tr>
-                                        <td>
-                                            <?php echo $dp->id_pekerjaan ?>
-                                        </td>
-                                        <td width="">
-                                            <?php echo $dp->nama_pekerjaan ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->volume ?>
-                                        </td>
-                                        <td>
-                                            <?php echo $dp->satuan ?>
-                                        </td>
-                                        <td>
-                                            Rp<?= number_format($dp->harga_satuan); ?>
-                                        </td>
+                                        <tr>
+                                            <td>
+                                                <?php echo $dp->id_pekerjaan ?>
+                                            </td>
+                                            <td width="">
+                                                <?php echo $dp->nama_pekerjaan ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->volume ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $dp->satuan ?>
+                                            </td>
+                                            <td>
+                                                Rp<?= number_format($dp->harga_satuan); ?>
+                                            </td>
 
-                                        <td>
-                                            Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
-                                        </td>
+                                            <td>
+                                                Rp<?= number_format($dp->volume * $dp->harga_satuan); ?>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
                                     <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>

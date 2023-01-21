@@ -62,17 +62,21 @@ class Detailpekerjaan_model extends CI_Model
     {
         $id_pekerjaan = $this->input->post('id_pekerjaan');
         $id_rab = $this->input->post('id_rab');
+        $kd_proyek = $this->input->post('kd_proyek');
         $data = [
             'id_pekerjaan' => $id_pekerjaan,
             'id_rab' => $id_rab,
+            'kd_proyek' => $kd_proyek,
             'nama_pekerjaan' => $this->input->post('nama_pekerjaan'),
             'satuan' => $this->input->post('satuan'),
             'volume' => $this->input->post('volume'),
             'harga_satuan' => $this->input->post('harga_satuan'),
         ];
+        // dead($data);
+        $this->db->where('kd_proyek', $kd_proyek);
         $this->db->where('id_pekerjaan', $id_pekerjaan);
         $this->db->update('pekerjaan', $data);
-        redirect('detailpekerjaan/index/' . $id_rab . '');
+        redirect('detailpekerjaan/index/' . $kd_proyek . '/' . $id_rab . '');
     }
 
     public function delete($id)
